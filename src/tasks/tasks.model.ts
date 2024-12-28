@@ -1,5 +1,5 @@
 
-export interface Task {
+interface Task {
     id: string;
     title: string;
     description: string;
@@ -12,3 +12,5 @@ enum TaskStatus {
     DONE = 'DONE',
     OVERDUE = 'OVERDUE'
 }
+
+export { Task, TaskStatus };
