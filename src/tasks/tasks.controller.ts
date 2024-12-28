@@ -10,7 +10,10 @@ export class TasksController {
     getAllTasks(): Task[] {
         return this.tasksService.getAllTasks();
     }
-
+    @Get('/:id')
+    getTaskById(id: string): Task {
+        return this.tasksService.getTaskById(id);
+    }
     @Post('/')
     createTask(@Body() createTaskDto:CreateTaskDto): Task {
         return this.tasksService.createTask(createTaskDto);
