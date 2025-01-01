@@ -9,8 +9,7 @@ interface Task {
 enum TaskStatus {
     OPEN = 'OPEN',
     IN_PROGRESS = 'IN_PROGRESS',
-    DONE = 'DONE',
-    OVERDUE = 'OVERDUE'
+    DONE = 'DONE'
 }
 
 export { Task, TaskStatus };
